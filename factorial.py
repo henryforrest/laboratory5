@@ -14,10 +14,12 @@ def endpoint () :
 
 
 def calculate ( n ) :
-    if n <= 0:
-        return 1
-    else :
-        return n * calculate (n -1)
+    total = 1
+
+    for x in range(n):
+        total *= x
+
+    return total 
     
     
 if __name__ == " __main__ ":
